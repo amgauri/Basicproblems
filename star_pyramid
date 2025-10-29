@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, rows, k;
+
+    printf("Enter rows: ");
+    scanf("%d", &rows);
+
+    k = rows + 1;
+
+    for(i = 1; i <= rows; i++) { 
+        k--;
+
+        // Print spaces
+        for(j = k; j > 1; j--) {
+            printf(" ");
+        }
+
+        // Print stars
+        for(j = 1; j <= i; j++) {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
