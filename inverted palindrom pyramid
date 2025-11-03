@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    
+    int i,j,k,rows;
+    printf("enter number of rows: ");
+    scanf("%d",&rows);
+    for(i=rows;i>=1;i--)
+    { 
+       for(j=rows;j>i;j--) //print space
+       {
+           printf(" ");
+       } 
+        k=2;
+        for(j=1;j<=(2*i)-1;j++) //prints palindrome number
+        {
+            if(j>i)
+            {
+                printf("%d",j-k);
+                k=k+2;
+            }
+            else
+            printf("%d",j);
+        }
+        printf("\n");
+        
+    }
+
+    return 0;
+}
